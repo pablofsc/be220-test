@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="section">
+    <div class="section-title">
+      PERSONAL ONLINE
+      <ion-button fill="clear" (click)="openModal('adicionar personal online!')">
+        <ion-icon class="add-button" name="add"></ion-icon>
+      </ion-button>
+    </div>
+
+    <div class="cards-container">
+      <app-picture-card pictureSource="../../assets/images/weight.jpg" action="NOVO TREINO"></app-picture-card>
+      <app-picture-card pictureSource="../../assets/images/yoga.jpg" title="YOGA EXPRESS"></app-picture-card>
+      <app-picture-card pictureSource="../../assets/images/calisthenics.jpg" title="CALISTENIA"></app-picture-card>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">
+      PROGRAMAS
+      <div class="new-badge">
+        NOVO
+      </div>
+    </div>
+
+    <div class="cards-container">
+      <app-picture-card pictureSource="../../assets/images/weight.jpg" title="LEVANTAMENTO DE PESO" [keepTraining]="true"></app-picture-card>
+      <app-picture-card pictureSource="../../assets/images/yoga.jpg" title="YOGA EXPRESS"></app-picture-card>
+    </div>
+  </div>
+</div>

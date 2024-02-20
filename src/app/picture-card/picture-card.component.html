@@ -1,0 +1,11 @@
+<div class="card-container" (click)="openModal('detalhes!')">
+  <img class="picture" [src]="pictureSource">
+
+  <div *ngIf="keepTraining" class="text-overlay overtitle">continuar treinando</div>
+  <div *ngIf="title" class="text-overlay title">{{title}}</div>
+
+  <div *ngIf="action" class="text-overlay action">
+    <ion-icon class="add-button" name="add"></ion-icon>
+    <div class="action-text">{{action}}</div>
+  </div>
+</div>

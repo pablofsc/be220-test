@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button color="dark"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title> Be220 Gym </ion-title>
+
+    <ion-buttons slot="end" class="notifications-bell" (click)="openModal('lista de notificações')">
+      <ion-icon name="notifications"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <div class="expanded-header-middle">
+    <app-profile-summary>
+
+    </app-profile-summary>
+  </div>
+
+  <div class="expanded-header-bottom">
+    <div class="expanded-header-bottom-buttons-container">
+      <ion-button fill="clear" (click)="openModal('meu corpo!')">
+        <ion-icon class="button-icon" name="accessibility"></ion-icon>
+        MEU CORPO
+      </ion-button>
+      <ion-button fill="clear" (click)="openModal('meus objetivos e conquistas!')">
+        <ion-icon class="button-icon" name="trophy"></ion-icon>
+        OBJETIVOS E CONQUISTAS
+      </ion-button>
+    </div>
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-home-page> </app-home-page>
+</ion-content>

@@ -1,0 +1,96 @@
+ion-menu-button {
+  color: var(--ion-color-primary);
+}
+
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.expanded-header-middle {
+  background: var(--ion-tab-bar-background);
+  padding-left: 20px;
+}
+
+.expanded-header-bottom {
+  background: var(--ion-tab-bar-background);
+  padding: 25px 0 15px 0;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.expanded-header-bottom-buttons-container {
+  background-color: var(--ion-item-background);
+  text-align: center;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.expanded-header-bottom-buttons-container>* {
+  color: var(--ion-color-secondary);
+}
+
+ion-title {
+  text-align: center;
+}
+
+.notifications-bell {
+  margin: 0 20px;
+  color: var(--ion-color-secondary);
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--ion-item-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  cursor: pointer;
+}
+
+ion-toolbar {
+  height: 100px;
+  display: flex;
+}
+
+.button-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--ion-color-secondary);
+  padding: 5px;
+  margin-right: 10px;
+}
+
+ion-header {
+  --box-shadow: none;
+  box-shadow: none;
+}
