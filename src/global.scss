@@ -32,7 +32,10 @@
   font-weight: 300;
 }
 
-/* Hide scrollbar for ion-content */
 -webkit-scrollbar {
   display: none;
+}
+
+:root {
+  color-scheme: dark;
 }
